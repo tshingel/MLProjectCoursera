@@ -114,14 +114,14 @@ modFit <- train(trainPC, trainclass, method = "rf", trControl = trainControl(met
 modFit
 ```
 
-In the following plots we can see the accuracy of our model vs. the nubmer of predictos. 
+In the following plot we can see the accuracy of our model vs. the number of predictors. 
 
 ```{r fig.width=7, fig.height=6}
 trellis.par.set(caretTheme())
 plot(modFit, main = "Accuracy.")
 ```
 
-As follows from above, the in-sample error is $\approx 4 \%$. 
+As follows from above, the in-sample error is $\approx 5 \%$. 
 
 ## Cross-Validation and Out-of-Sample Error 
 Now we can apply the model to our validation set and calculate the expected out-of-sample error. 
